@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F228CCF0-3D6A-4DF3-A05E-593E3EB299D4}</ProjectGuid>
+    <ProjectGuid>{7A0EAB50-AEBF-4FFA-BBBF-BCF77112AC99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ratatoskr.Loader</RootNamespace>
-    <AssemblyName>Ratatoskr.Loader</AssemblyName>
+    <RootNamespace>Rataoskr.Common</RootNamespace>
+    <AssemblyName>Rataoskr.Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Locator.cs" />
-    <Compile Include="Sponsor.cs" />
+    <Compile Include="Extensions\ResultExtensions.cs" />
+    <Compile Include="Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
